@@ -1,0 +1,4 @@
+Mirar estilos del panel de administrador
+Correo de confirmación (PQRS, Cita)
+gmail : pacientes.servioral@gmail.com
+password : SISTEMAS2022

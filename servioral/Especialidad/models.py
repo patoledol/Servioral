@@ -14,4 +14,4 @@ class especialidad(models.Model):
         verbose_name_plural = "Especialidades"
                 
     def __str__(self):
-        return self.name
+        return self.name_es

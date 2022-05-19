@@ -2,6 +2,9 @@
 from django.contrib import admin
 from django.urls import path
 from core import views as core_views
+from Odontologo import views as odonto_views
+from Especialidad import views as espe_views
+from Contacto import views as contacto_views
 #from portfolio import views as portfolio_views
 #from contact import views as contact_views
 #from blog import views as blog_views
@@ -9,12 +12,12 @@ from django.conf import settings
 
 urlpatterns = [
     path('', core_views.home, name="home"),
-    #path('about-us/', core_views.aboutus, name="about"),
-    #path('products/', portfolio_views.portfolio, name="products"),
+    path('about-us/', odonto_views.nosotros, name="about"),
+    path('Servicios/', espe_views.especialidad, name="espcialidad"),
     #path('blog/', blog_views.blog, name="blog"),
     #path('blog/<int:id>', blog_views.blog_detail, name="blog_detail"),
-    #path('contact/', contact_views.contact, name="contacto"),
-    path('admin/', admin.site.urls),
+    path('contacto/', contacto_views.contacto, name="contacto"), 
+    path('admin/', admin.site.urls, name="admin"),
 ]
 
 admin.site.site_header = "Administrador de Servioral"

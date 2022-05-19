@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'adminlte3',
+    'adminlte3_theme',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -46,7 +48,8 @@ INSTALLED_APPS = [
     'Genero.apps.GeneroConfig',
     'Odontologo.apps.OdontologoConfig',
     'Paciente.apps.PacienteConfig',
-    'Servicio.apps.ServicioConfig'
+    'Servicio.apps.ServicioConfig',
+    'Contacto.apps.ContactoConfig'
    
 ]
 
@@ -144,8 +147,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #Email auto replay
 #Enviroment variables
-USER_EMAIL = os.environ['USER_MAIL'] = 'pruebainnfood@gmail.com'
-USER_PASSWORD = os.environ['USER_PASSWORD'] = 'innfood12345...'
+USER_EMAIL = os.environ['USER_MAIL'] = 'servioral.pacientes@gmail.com'
+USER_PASSWORD = os.environ['USER_PASSWORD'] = 'SISTEMAS2022'
 USER_EMAIL_PORT = os.environ['USER_EMAIL_PORT'] = '587'
 
 EMAIL_HOST = 'smtp.googlemail.com'
