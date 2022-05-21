@@ -18,11 +18,12 @@ urlpatterns = [
     #path('blog/<int:id>', blog_views.blog_detail, name="blog_detail"),
     path('contacto/', contacto_views.contacto, name="contacto"), 
     path('admin/', admin.site.urls, name="admin"),
+    path('admin/logout', admin.site.logout)
 ]
 
 admin.site.site_header = "Administrador de Servioral"
-admin.site.site_title = "Servioral portal Administrador"
-admin.site.index_title = "Bienvenido al gestor de contenido de Servioral  "
+admin.site.site_title = "ServiSIS portal Administrador"
+admin.site.index_title = "Bienvenido al gestor de citas ServiSIS  "
 
 if settings.DEBUG:
     from django.conf.urls.static import static
