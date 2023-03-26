@@ -1,5 +1,3 @@
-django
-Pillow
-pylint
-pylint-ckeditor
-pylint-django
+django==2.0.2
+Pillow==5.0.0
+django-ckeditor==5.4.0
